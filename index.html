@@ -63,12 +63,12 @@
     
         <div class="row"> 
            
-            <div class="column w-100 text-center pt-2">
+            <div class="col w-100 text-center pt-2">
                 
                 <p class="mb-0"> CONOCE A LOS</p> 
                 <h2>ORADORES</h2>
 
-                <div class="container-fluid d-flex flex-row cards-container">
+                <div class="container d-flex cards-container w-100">
 
                     <div class="card">
 
@@ -80,7 +80,7 @@
                                 <span class="badge bg-info"> React</span>                  
                             </p>
 
-                            <h5 class="card-title"> STEVE JOBS</h5>
+                            <h5 class="card-title"> Steve Jobs</h5>
                              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe impedit veniam tenetur ipsum provident soluta sint, voluptatem eligendi nisi! Cupiditate quia accusamus similique in quam a harum ducimus possimus laboriosam laudantium.</p>
                         </div>    
                     </div>
@@ -96,7 +96,7 @@
                                 <span class="badge bg-info"> React</span>
                             </p>
 
-                            <h5 class="card-title"> BILL GATES</h5>
+                            <h5 class="card-title"> Bill Gates</h5>
                              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe impedit veniam tenetur ipsum provident soluta sint, voluptatem eligendi nisi! Cupiditate quia accusamus similique in quam a harum ducimus possimus laboriosam laudantium.</p>
                         </div>    
                     </div>
@@ -112,7 +112,7 @@
                                 <span class="badge bg-danger text-light">Startups</span>               
                             </p>
 
-                            <h5 class="card-title">ADA LOVELACE</h5>
+                            <h5 class="card-title">Ada Lovelace</h5>
                              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe impedit veniam tenetur ipsum provident soluta sint, voluptatem eligendi nisi! Cupiditate quia accusamus similique in quam a harum ducimus possimus laboriosam laudantium.</p>
                         </div>    
                     </div>
@@ -125,17 +125,56 @@
     
         <div class="row">
             
-            <div class="column w-50">
-                <img src="imgs/honolulu.jpg" alt="" id="playa">    
+            <div class="col w-50">
+                <img class="img-fluid"  src="imgs/honolulu.jpg" alt="" id="playa">    
             </div>
             
-            <div class="column w-50">
+            <div class="col w-50 p-3 text-light" id="octubre">
+
+                <h4>Bs As - Octubre</h4>
+                <p> Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre las principales ciudades de estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km^2 de superficie).</p>
                 
             </div>
 
         </div>
     
-        <div class="row"> row 4 </div>
+        <div class="row"> 
+
+            <div class="col-3"></div>
+
+            <div class="col-6 text-center w-50">
+
+                <p class="mb-0 mt-4"> conviertete en un</p> 
+                <h2>ORADOR</h2>
+                <p class="mb-0"> Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p> 
+
+                <form id="form-box">
+
+                    <div class="d-flex p-0">
+                        <input type="text" placeholder="Nombre" class="form-control w-50 m-2">
+                        <input type="text" placeholder="Apellido" class="form-control w-50 m-2">
+                    </div>
+                    
+                    
+                    <div class="container p-2">
+                        <textarea class="form-control m-0" id="" rows="4" placeholder="Sobre que quieres hablar?"></textarea>
+                        <p class="text-left" style="font-size: smaller;">recuerda incluir un título para tu charla</p>
+                        <BUtton class="btn w-100 mb-4" id="btn-enviar"> Enviar </BUtton>
+                    
+                    </div>
+                    
+                    
+                    
+                </form>
+
+
+               
+
+            </div>
+
+            <div class="col-3"></div>
+
+        </div>
 
     </div>
     
