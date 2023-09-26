@@ -6,6 +6,11 @@ nav{
    
 }
 
+nav a{
+    font-size: larger;
+    color: white;
+}
+
 .navbar-brand{
     
     height: 4rem;
