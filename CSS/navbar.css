@@ -7,8 +7,21 @@ nav{
 }
 
 nav a{
-    font-size: larger;
+   
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     color: white;
+    text-decoration: none;
+}
+
+nav a:first{
+    font-size: larger;
+}
+
+nav a:visited{
+
+    text-decoration: none;
+
 }
 
 .navbar-brand{

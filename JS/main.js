@@ -8,3 +8,10 @@ function enviar(){
     alert("Tu mensaje ha sido enviado " + nombre + " " + apellido + "!");
 
 }
+
+
+function comprar(){
+
+    confirm("Será redirigido al sitio ticketech.com");
+
+}
