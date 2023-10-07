@@ -70,12 +70,20 @@
                 </div>
                
 
-                <div class="w-50 text-right pl-5" id="intro-text-box">
+                <div class="d-none d-md-block w-50 text-right pl-5" id="intro-text-box-md">
                     <h2> Conf Bs As</h2>
                     <p> Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Coodo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
                     <button type="button" class="btn btn-outline-light m-1">Quiero ser orador</button>     
                     <button type="button" class="btn btn-success m-1">Comprar tickets</button>     
                 </div>
+
+                <div class="d-block d-md-none text-center pl-5" id="intro-text-box-sm">
+                    <h2> Conf Bs As</h2>
+                    <p> Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Coodo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                    <button type="button" class="btn btn-outline-light m-1">Quiero ser orador</button>     
+                    <button type="button" class="btn btn-success m-1">Comprar tickets</button>     
+                </div>
+                
 
 
             </div>
@@ -145,15 +153,21 @@
     
         <div class="row" id="lugaryfecha">
             
-            <div class="displa">
-
+            <div class="d-block d-md-none p-0">
+                <img class="img-fluid"  src="imgs/honolulu.jpg" alt="" id="playa"> 
             </div>
 
-            <div class="col w-50 p-0">
+            <div class="d-block d-md-none text-light" id="octubre">
+                <h4>Bs As - Octubre</h4>
+                <p> Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre las principales ciudades de estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km^2 de superficie).</p>
+            </div>
+
+
+            <div class="col d-none d-md-block  w-50 p-0">
                 <img class="img-fluid"  src="imgs/honolulu.jpg" alt="" id="playa">    
             </div>
             
-            <div class="col w-50 p-3 m-0 text-light" id="octubre">
+            <div class="col d-none d-md-block w-50 p-3 m-0 text-light" id="octubre">
                 <h4>Bs As - Octubre</h4>
                 <p> Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la mas sureña de entre las principales ciudades de estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km^2 de superficie).</p>
             </div>
@@ -162,15 +176,19 @@
     
         <div class="row" id="registro"> 
 
-            <div class="col-3"></div>
+            <div class="d-none d-md-block col-3"></div>
 
-            <div class="col-6 text-center w-50">
+            <div class="col text-left text-md-center">
 
-                <p class="mb-0 mt-4"> conviertete en un</p> 
-                <h2>ORADOR</h2>
-                <p class="mb-0"> Anótate como orador para dar una <a href="https://www.ignitetalks.io" id="charla-link">charla ignite</a>. Cuéntanos de qué quieres hablar!</p> 
+                <div class="text-center">
+                    <p class="mb-0 mt-4"> conviertete en un</p> 
+                    <h2>ORADOR</h2>
+                </div>
+               
+                <p class=" d-md-block mb-0"> Anótate como orador para dar una <a href="https://www.ignitetalks.io" id="charla-link">charla ignite</a>. Cuéntanos de qué quieres hablar!</p> 
+                
 
-                <form id="form-box">
+                <form class="d-none d-md-block" id="form-box">
 
                     <div class="d-flex p-0">
                         <input type="text" placeholder="Nombre" class="form-control w-50 m-2 " required id="campo_nombre">
@@ -187,9 +205,28 @@
                         
                 </form>
 
+                <form class="d-md-none" id="form-box">
+
+                    <div class="p-0">
+                        <input type="text" placeholder="Nombre" class="form-control w-50 m-2 " required id="campo_nombre">
+                        <input type="text" placeholder="Apellido" class="form-control w-50 m-2" required id="campo_apellido">
+                    </div>
+                    
+                    
+                    <div class="container p-0">
+                        <textarea class="form-control m-0" id="" rows="4" placeholder="Sobre que quieres hablar?" required></textarea>
+                        <p class="text-left" style="font-size: smaller;">recuerda incluir un título para tu charla</p>
+                        <BUtton class="btn w-100 mb-4" id="btn-enviar" onclick='enviar()'> Enviar </BUtton>
+                    
+                    </div>
+                        
+                </form>
+
+                
+
             </div>
 
-            <div class="col-3">
+            <div class="d-none d-md-block col-3">
 
             </div>
 
@@ -199,7 +236,7 @@
 
             <div class="col p-4">
 
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center flex flex-wrap">
 
                 <a href="">Preguntas frecuentes</a>
                 <a href="">Contáctanos</a>

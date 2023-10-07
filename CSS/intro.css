@@ -16,10 +16,17 @@ div.relative{
   
 }
 
-#intro-text-box{
+#intro-text-box-md{
     position: absolute;
     top: 35vh;
     left: 40vw; 
+}
+
+#intro-text-box-sm{
+    position: absolute;
+    top: 15vh;
+    padding: 3rem;
+    
 }
 
 #intro-column{
